@@ -5,17 +5,23 @@
   - Eventi con addEventListener (mai onclick inline nell'HTML).
 */
 
+
+
+let tasks = [];
+
 const formTask = document.querySelector('#form-task');
 const campoTask = document.querySelector('#campo-task');
 const errore = document.querySelector('#errore');
 const filtri = document.querySelectorAll('.filtri button');
 const listaTask = document.querySelector('#lista-task');
 const contatore = document.querySelector('#contatore');
-
-let tasks = [];
 // Ogni task: { id: number, testo: string, completato: boolean }
+const attivi = document.querySelector('#attivi');
+const tutti = document.querySelector('#tutti');
+const completati = document.querySelector('#completati');
 
-let filtro = "tutti"; // "tutti" | "attivi" | "completati"
+
+// let filtro = "tutti"; // "tutti" | "attivi" | "completati"
 
 
 /* SCRIVI QUI LE TUE FUNZIONI E I TUOI LISTENER:
