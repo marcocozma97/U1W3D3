@@ -5,6 +5,13 @@
   - Eventi con addEventListener (mai onclick inline nell'HTML).
 */
 
+const formTask = document.querySelector('#form-task');
+const campoTask = document.querySelector('#campo-task');
+const errore = document.querySelector('#errore');
+const filtri = document.querySelectorAll('.filtri button');
+const listaTask = document.querySelector('#lista-task');
+const contatore = document.querySelector('#contatore');
+
 let tasks = [];
 // Ogni task: { id: number, testo: string, completato: boolean }
 
@@ -18,3 +25,6 @@ let filtro = "tutti"; // "tutti" | "attivi" | "completati"
    4. Listener sui button .filtri (cambia filtro, classe attivo, render)
    EXTRA: localStorage per persistenza
 */
+
+// 1. Listener sul submit di #form-task
+
